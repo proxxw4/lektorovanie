@@ -8,7 +8,14 @@ app: FastAPI = FastAPI()
 
 @app.get("/")
 def root():
-    return {"message": "Hello world"}
+    return {
+        "message": "Hello world",
+        "nova": "Toto je nova sprava",
+    }
+
+@app.get("/proxxw/")
+def proxxw():
+    return {"message": "Volam sa Nasta"}
 
 
 @app.get("/test/1")
@@ -35,6 +42,6 @@ if __name__ == "__main__":
     uvicorn.run(
         "main:app",
         host="127.0.0.1",
-        port=8000,
+        port=8001,
         reload=True,
     )
