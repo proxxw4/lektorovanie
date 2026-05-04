@@ -1,28 +1,96 @@
 <!DOCTYPE html>
 <html lang="sk">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Moja prva stranka</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <div class="container">
-      <h1>Tu je nadpis</h1>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechShop</title>
 
-      <p>Tu pis text do prveho odseku.</p>
+  <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
 
-      <h2>Tu je mensi nadpis</h2>
+<body>
 
-      <p>Tu mozu studenti pisat dalsi text alebo skusat vlastne HTML tagy.</p>
+<header>
+  <div class="nav">
+    <div class="logo">TechShop</div>
 
-      <a href="#">Tu moze byt odkaz</a>
+    <ul>
+      <li><a href="#">Domov</a></li>
+      <li><a href="#produkt">Produkt</a></li>
+      <li><a href="#produkty">Produkty</a></li>
+      <li><a href="#kontakt">Kontakt</a></li>
+    </ul>
+  </div>
+</header>
 
-      <ul>
-        <li>Tu je prva polozka</li>
-        <li>Tu je druha polozka</li>
-        <li>Tu je tretia polozka</li>
-      </ul>
+<section class="hero">
+  <h1>Moderné herné vybavenie</h1>
+  <p>Presnosť, výkon a štýl v jednom</p>
+  <a class="btn" href="#produkt">Nakupovať</a>
+</section>
+
+<section class="product" id="produkt">
+  <img src="https://images.unsplash.com/photo-1527814050087-3793815479db" alt="produkt">
+
+  <div>
+    <h2>Herná myš X200</h2>
+    <p class="price">29.99 €</p>
+    <p>Ergonomická myš s RGB podsvietením a vysokou presnosťou pre profesionálne hranie.</p>
+    <button>Pridať do košíka</button>
+  </div>
+</section>
+
+<section class="grid-section" id="produkty">
+  <h2>Ďalšie produkty</h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1587829741301-dc798b83add3" alt="">
+      <h3>Slúchadlá</h3>
+      <p class="price">49.99 €</p>
+      <button>Kúpiť</button>
     </div>
-  </body>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1618384887929-16ec33fab9ef" alt="">
+      <h3>Klávesnica</h3>
+      <p class="price">79.99 €</p>
+      <button>Kúpiť</button>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7" alt="">
+      <h3>Podložka</h3>
+      <p class="price">14.99 €</p>
+      <button>Kúpiť</button>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1615663245845-5b5f5a0a1f9f" alt="">
+      <h3>Myš Pro</h3>
+      <p class="price">39.99 €</p>
+      <button>Kúpiť</button>
+    </div>
+
+  </div>
+</section>
+
+<section class="benefits">
+  <h2>Prečo my</h2>
+
+  <div class="benefit-list">
+    <div class="benefit">Rýchle doručenie</div>
+    <div class="benefit">Kvalitné produkty</div>
+    <div class="benefit">Moderný dizajn</div>
+  </div>
+</section>
+
+<footer id="kontakt">
+  <p>info@techshop.sk</p>
+  <p>© 2026 TechShop</p>
+</footer>
+
+</body>
 </html>
